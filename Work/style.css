@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.banner {
+    background: url("CVA.jpg");
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+    height: 300px;
+	width: 100%;
+	display: flex;       
+    justify-content: center;    
+    align-items: center;     
+    color: white;
+    padding-bottom: 20px;
+}
+.slogan {
+    margin: 0;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+.blocks {
+    display: flex;
+    margin: 0;          /* remove margins */
+    padding: 0;         /* remove padding */
+}
+
+
+.block {
+    flex: 1;                    /* each block takes equal width */
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0;           /* remove rounded corners */
+    box-shadow: none;  	/* remove shadows */
+}
+
+.block h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.block p {
+    color: #666;
+}
+
+
+.content-blocks { 
+	width: 100%; 
+	margin: 0; 
+	padding: 0; 
+}
+/* Each row */ 
+.row { 
+	display: flex; 
+	width: 100%; 
+	margin: 0; 
+	padding: 0; 
+} 
+
+/* Text and Image take equal space */ 
+.text { 
+	flex: 1; 
+	display: flex; 
+	flex-direction: column; /* stack elements vertically */ 
+	text-align: left; /* center text inside <p> and <ul> */ 
+	padding-top: 50px;
+	padding-left: 30px;
+} 
+
+.text h3 { 
+	font-size: 45px; 
+	padding-left: 10px; 
+} 
+
+.text p { 
+	font-size: 25px; 
+	padding-left: 5px; 
+} 
+
+.text ul {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.text li {
+    list-style-position: inside;  
+	padding-left: 10px;
+	font-size: 35px;
+}
+
+.image { 
+	flex: 1; 
+	padding: 0; /* remove inner padding if you want completely flush */ 
+} 
+
+/* Images fill their block */ 
+.image img { 
+	width: 100%; 
+	height: 100%; /* or auto if you want to maintain aspect ratio */ 
+	display: block; 
+}

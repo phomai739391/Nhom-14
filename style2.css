@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.banner {
+    background: url("CVA.jpg");
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat;
+    height: 300px;
+	width: 100%;
+	display: flex;       
+    justify-content: center;    
+    align-items: center;     
+    color: white;
+    padding-bottom: 20px;
+}
+.slogan {
+    margin: 0;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+.blocks {
+    display: flex;
+    margin: 0;          /* remove margins */
+    padding: 0;         /* remove padding */
+}
+
+
+.block {
+    flex: 1;                    /* each block takes equal width */
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    border-radius: 0;           /* remove rounded corners */
+    box-shadow: none;  	/* remove shadows */
+}
+
+.block h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.block p {
+    color: #666;
+}
+
+
+.container {
+    display: flex;
+    background: #f5f5f5;
+}
+
+.sidebar {
+    width: 200px;
+    background: #e8e8e8;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #0033cc;
+}
+
+.sidebar a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    flex: 1;
+    padding: 30px;
+    background: white;
+    border-left: 1px solid #ccc;
+}
+
+/* Hide all sections by default */
+.section {
+    display: none;
+}
+
+/* Show the section that matches the #id in the URL */
+.section:target {
+    display: block;
+}
+
+.image-row {
+    display: flex;
+    width: 100%;
+    height: 300px;        /* You can change this */
+}
+
+.image-row img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;    /* Makes images fully fill their half */
+}
+
